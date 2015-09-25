@@ -6,6 +6,11 @@
 \makelosymbols
 \makeloabbreviations
 
+\newcommand\coppefrontmatter{%
+    \cleardoublepage
+  %\@mainmatterfalse
+  \pagenumbering{roman}}
+
 \begin{document}
   \title{Título da Tese}
   \foreigntitle{Thesis Title}
@@ -28,7 +33,7 @@
 
   \maketitle
 
-  \frontmatter
+  \coppefrontmatter
   \include{dedic}
   \include{thanks}
   \include{resumo}
