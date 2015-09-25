@@ -1,0 +1,55 @@
+\documentclass[dsc,numbers]{coppe}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb}
+\usepackage{hyperref}
+
+\makelosymbols
+\makeloabbreviations
+
+\begin{document}
+  \title{Título da Tese}
+  \foreigntitle{Thesis Title}
+  \author{Nome do Autor}{Sobrenome}
+  \advisor{Prof.}{Nome do Primeiro Orientador}{Sobrenome}{D.Sc.}
+  \advisor{Prof.}{Nome do Segundo Orientador}{Sobrenome}{Ph.D.}
+  \advisor{Prof.}{Nome do Terceiro Orientador}{Sobrenome}{D.Sc.}
+
+  \examiner{Prof.}{Nome do Primeiro Examinador Sobrenome}{D.Sc.}
+  \examiner{Prof.}{Nome do Segundo Examinador Sobrenome}{Ph.D.}
+  \examiner{Prof.}{Nome do Terceiro Examinador Sobrenome}{D.Sc.}
+  \examiner{Prof.}{Nome do Quarto Examinador Sobrenome}{Ph.D.}
+  \examiner{Prof.}{Nome do Quinto Examinador Sobrenome}{Ph.D.}
+  \department{PEC}
+  \date{02}{2011}
+
+  \keyword{Primeira palavra-chave}
+  \keyword{Segunda palavra-chave}
+  \keyword{Terceira palavra-chave}
+
+  \maketitle
+
+  \frontmatter
+  \include{dedic}
+  \include{thanks}
+  \include{resumo}
+  \include{abstract}
+  \tableofcontents
+  \listoffigures
+  \listoftables
+  \printlosymbols
+  \printloabbreviations
+
+  \mainmatter
+  \include{chap01}
+  \include{chap02}
+  \include{chap03}
+  \include{chap04}
+  \include{chap05}
+
+  \backmatter
+  \bibliographystyle{coppe-unsrt}
+  \bibliography{thesis}
+
+  \appendix
+  \include{appenA}
+\end{document}
